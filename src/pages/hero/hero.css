@@ -1,0 +1,127 @@
+/* hero section design*/
+
+.hero {
+    height: 85vh;
+}
+
+.main-hero-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    position: relative;
+    width: 1300px;
+    max-width: 100%;
+    padding: 3rem;
+    border: 1px dashed #fff;
+}
+
+.hero-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px dashed #fff;
+    left: -2rem;
+    bottom: -2rem;
+    opacity: .4;
+    z-index: -1;
+}
+
+.hero-greet {
+    letter-spacing: 7px;
+    font-weight: 200;
+}
+
+.hero-fullname {
+    font-size: 3rem;
+    letter-spacing: 7px;
+    font-weight: 400;
+}
+
+.hero-title {
+    background-color: yellow;
+    padding: 10px 1.5rem;
+}
+
+.hero-title-type {
+    color: #222;
+    letter-spacing: 7px;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.hero-value-des {
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #ddd;
+}
+
+.hero-value-des span {
+    font-weight: 300;
+    color: yellow;
+}
+
+.hero-main-button {
+    margin-top: 2.5rem;
+}
+
+.hero-main-button .hero-btn {
+    background-color: #fff;
+    color: #222;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    transition: .1s ease-out;
+    border-color: transparent;
+    outline: none;
+}
+
+.hero-main-button .hero-btn:hover {
+    box-shadow: -5px 5px 0px #fff;
+    background-color: yellow;
+    color: #222;
+    transform: translateX(10px);
+    outline: none;
+}
+
+.hero-main-button .hero-btn:active {
+    background-color: yellow !important;
+    color: #222 !important;
+}
+
+.hero-social-links {
+    margin-left: 2rem;
+}
+
+.hero-social-links a {
+    position: relative;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: .3s ease-out;
+}
+
+.hero-social-links i {
+    font-size: 2rem;
+    color: #fff;
+    padding: 12px;
+    transition: .3s ease-out;
+}
+
+.hero-social-links a:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #222;
+}
+
+.hero-social-links a:hover {
+    background-color: yellow;
+}

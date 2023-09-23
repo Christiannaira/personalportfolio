@@ -1,0 +1,13 @@
+.services {
+    background-color: yellow;
+}
+
+.services-main-text h2,
+.services-main-text span {
+    -webkit-text-stroke-color: #222;
+    -webkit-text-stroke-width: 2px;
+}
+
+.services-main-text span {
+    -webkit-text-stroke-width: 1px;
+}
