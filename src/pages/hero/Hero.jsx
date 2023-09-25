@@ -13,7 +13,7 @@ const Hero = () => {
 
         <>
             <Navigation />
-            <section className="hero" id="hero">
+            <section className="hero" id="home">
 
                 <div className="main-hero-content">
 
@@ -75,7 +75,7 @@ const Hero = () => {
 
             <Projects />
             <Services />
-            <About />
+            {/* <About /> */}
         </>
     )
 }

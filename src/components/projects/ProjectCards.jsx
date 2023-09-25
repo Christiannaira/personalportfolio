@@ -11,43 +11,45 @@ const ProjectCards = () => {
         <>
             {projectData.map(({ id, projectTitle, description, date, tools, projectLink, githubLink, projectImg }, index) => (
 
-                <div className="col-lg-4 project-main-card" key={index}>
+                <div className="col-lg-6 project-main-card" key={index}>
 
-                    <div className="card">
+                    <div className="project-main-card-content">
 
-                        <img src={SampleProject} alt="" style={{ width: "100%" }} className='card-img-top' />
+                        <div className="project-main-card-content-img">
+                            <img src={SampleProject} alt="" />
+                        </div>
 
-                        <div className="card-animation">
-
+                        <div className="animation-layer">
 
                         </div>
 
-                        <div className="card-body">
+                        <div className="project-main-card-des">
 
-                            <div className="card-body-content border
-                             h-100 " >
+                            <div className="project-main-card-title d-flex justify-content-between">
 
-                                <div className="card-body-titles d-flex align-items-start justify-content-between w-100">
+                                <h3 className="project-title">{projectTitle}</h3>
 
-                                    <h4 className="card-content-name">
-                                        {projectTitle}
-                                    </h4>
+                                <h4 className="projectNumber">0{id}</h4>
 
-                                    <h5 className="card-content-number">0{id}</h5>
+                            </div>
 
-                                </div>
+                            <div className="projects-main-card-tools d-flex">
 
-                                <div className="card-body-tools border">
-                                    {tools.map((tool, index) => (
-                                        <span key={index} className='card-tool'>{tool}</span>
-                                    ))}
-                                </div>
+                                {tools.map((tool, index) => {
+
+                                    return (
+                                        <span className='card-tool' key={index}>{tool}</span>
+                                    )
+
+                                })}
 
                             </div>
 
                         </div>
 
                     </div>
+
+
 
                 </div>
 

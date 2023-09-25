@@ -1,6 +1,9 @@
 import React from 'react';
 import './services.css';
 
+import ServicesCards from './ServicesCards';
+
+
 const Services = () => {
     return (
         <>
@@ -12,6 +15,16 @@ const Services = () => {
                     <div className="section-main-text services-main-text">
                         <span>current</span>
                         <h2>SERVICES</h2>
+                    </div>
+
+                    <div className="services-content">
+
+                        <div className="services-list-content row">
+
+                            <ServicesCards />
+
+                        </div>
+
                     </div>
 
                 </div>
