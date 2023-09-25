@@ -1,0 +1,19 @@
+.cta {
+    border-top: 2px solid #222;
+}
+
+.cta-main-content {
+    text-align: center;
+}
+
+.cta-content-btn .btn {
+    background-color: #fff;
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    font-weight: 800;
+}
+
+.cta-content-btn .btn:hover {
+    background-color: yellow;
+    color: #222;
+}

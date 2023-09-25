@@ -1,12 +1,50 @@
-.services {
+.services-main-text span {
+    -webkit-text-stroke-width: 1px;
+}
+
+.services-card-main-content {
+    padding: 1rem 2rem;
+}
+
+.services-card-content {
+    position: relative;
+    background-color: hsl(260, 60%, 98%);
+    border-top: 5px solid yellow;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: .1s ease-out;
+}
+
+.services-card-content.best {
     background-color: yellow;
 }
 
-.services-main-text h2,
-.services-main-text span {
-    -webkit-text-stroke-color: #222 !important;
+.services-card-content:hover {
+    transform: translateY(-10px);
 }
 
-.services-main-text span {
-    -webkit-text-stroke-width: 1px;
+.services-card-img {
+    width: 120px;
+    margin: auto;
+}
+
+.services-card-img img {
+    display: block;
+    max-width: 100%;
+}
+
+.services-card-title {
+    margin-top: 1rem;
+    text-align: center;
+
+}
+
+.services-card-title h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.services-card-title p {
+    color: #555;
 }

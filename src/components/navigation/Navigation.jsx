@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './navigation.css'
+import './navigation.css';
 
 const Navigation = () => {
 
     const [openNav, setOpenNav] = useState(false);
+    const [changeNav, setChangeNav] = useState(false);
 
     const handleClick = () => {
 
@@ -11,10 +12,25 @@ const Navigation = () => {
 
     }
 
+    useEffect(() => {
+
+        window.onscroll = () => {
+
+            if (window.scrollY > 100) {
+                setChangeNav(true);
+            } else {
+                setChangeNav(false);
+            }
+
+        }
+
+    }, [changeNav])
+
+
     return (
         <>
 
-            <section className="navigation" id="navigation">
+            <section className={changeNav ? "navigation navigation_change" : "navigation"} id="navigation">
 
                 <div className="navigation-main-content">
 

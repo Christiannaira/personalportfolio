@@ -6,16 +6,21 @@ import servicesData from './ServicesData';
 const ServicesCards = () => {
     return (
         <>
-            {servicesData.map(({ id, title, description, dataImg }, index) => {
+            {servicesData.map(({ id, title, description, dataImg, best }, index) => {
 
                 return (
 
-                    <div className="col-md-4 border services-card-main-content ">
+                    <div className="col-lg-4 services-card-main-content ">
 
-                        <div className="services-card-content">
+                        <div className={best ? 'services-card-content best' : 'services-card-content'}>
+
+                            <div className="services-card-img">
+                                <img src={dataImg} alt="" />
+                            </div>
 
                             <div className="services-card-title">
                                 <h3>{title}</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sunt sit nesciunt quibusdam blanditiis aspernatur ratione temporibus obcaecati quas dolorem corporis non nostrum culpa qui inventore, laborum sapiente, reprehenderit minima?</p>
                             </div>
 
                         </div>

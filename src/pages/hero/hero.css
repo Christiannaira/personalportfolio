@@ -126,3 +126,30 @@
 .hero-social-links a:hover {
     background-color: yellow;
 }
+
+.hero-review {
+    margin-right: 5rem;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-review-content {
+    text-align: center;
+}
+
+.hero-review-content h4 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: .9;
+}
+
+.hero-review-content span {
+    display: inline-block;
+    background-color: yellow;
+    color: #222;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 13px;
+}

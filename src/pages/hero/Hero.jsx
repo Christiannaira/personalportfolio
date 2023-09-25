@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TypeIt from 'typeit-react';
 
 import './hero.css';
@@ -7,11 +7,20 @@ import Projects from '../../components/projects/Projects';
 import Navigation from '../../components/navigation/Navigation';
 import Services from '../../components/services/Services';
 import About from '../../components/about/About';
+import Benefits from '../../components/benefits/Benefits';
+import Cta from '../../components/cta/Cta';
+
+import ReviewOne from '../../assets/c1.jpg';
+
 
 const Hero = () => {
+
+
     return (
 
         <>
+
+
             <Navigation />
             <section className="hero" id="home">
 
@@ -51,15 +60,38 @@ const Hero = () => {
                             building <span>clean and converting landing pages.</span>
                         </p>
 
-                        <div className="hero-main-button d-flex align-items-center">
-                            <button className="btn btn-dark hero-btn">Book A Free Consultation</button>
+                        <div className="hero-main-button d-flex align-items-center justify-content-between">
 
-                            <div className="hero-social-links d-flex align-items-center gap-2">
+                            <div className="hero-main-button-content d-flex align-items-center">
+                                <button className="btn btn-dark hero-btn">Book A Free Consultation</button>
 
-                                <a href=""><i class='bx bxl-linkedin-square'></i></a>
-                                <a href=""><i class='bx bxl-github' ></i></a>
-                                <a href=""><i class='bx bxl-facebook-square' ></i></a>
-                                <a href=""><i class='bx bxl-dribbble' ></i></a>
+                                <div className="hero-social-links d-flex align-items-center gap-2">
+
+                                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                                    <a href=""><i class='bx bxl-github' ></i></a>
+                                    <a href=""><i class='bx bxl-facebook-square' ></i></a>
+                                    <a href=""><i class='bx bxl-dribbble' ></i></a>
+
+                                </div>
+                            </div>
+
+
+
+                            <div className="hero-review ">
+
+                                <div className="hero-review-content d-flex gap-3">
+
+                                    <div className="hero-review-content-card">
+                                        <h4>10 +</h4>
+                                        <span>projects completed</span>
+                                    </div>
+
+                                    <div className="hero-review-content-card">
+                                        <h4>1 +</h4>
+                                        <span>bootcamp awards</span>
+                                    </div>
+
+                                </div>
 
                             </div>
 
@@ -71,10 +103,16 @@ const Hero = () => {
 
                 </div>
 
+                <div className="div">
+
+                </div>
+
             </section>
 
             <Projects />
             <Services />
+            <Benefits />
+            <Cta />
             {/* <About /> */}
         </>
     )

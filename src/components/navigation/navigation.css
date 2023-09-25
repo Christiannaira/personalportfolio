@@ -4,7 +4,17 @@
     position: fixed;
     width: 100%;
     background-color: inherit;
-    padding-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 3;
+    transition: .2s ease-out;
+    border-top: 5px solid yellow
+}
+
+.navigation_change {
+    background-color: rgba(34, 34, 34, .7);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .navigation-main-content {
@@ -33,6 +43,10 @@
     display: inline-block;
     padding: 10px 15px;
     font-size: 15px;
+}
+
+.navigation-list>a:hover {
+    color: yellow;
 }
 
 @media screen and (max-width: 1060px) {
