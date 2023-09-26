@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import servicesData from './ServicesData';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const ServicesCards = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <>
             {servicesData.map(({ id, title, description, dataImg, best }, index) => {

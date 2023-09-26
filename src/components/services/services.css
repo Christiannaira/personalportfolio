@@ -1,3 +1,7 @@
+.services {
+    padding-top: 0;
+}
+
 .services-main-text span {
     -webkit-text-stroke-width: 1px;
 }
