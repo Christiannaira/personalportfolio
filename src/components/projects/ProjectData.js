@@ -9,6 +9,7 @@ const projectData = [
         githubLink: '',
         projectImg: '',
         color: '',
+        animation: 'left',
     },
     {
         id: 2,
@@ -20,6 +21,7 @@ const projectData = [
         githubLink: '',
         projectImg: '',
         color: '',
+        animation: 'right',
     },
     {
         id: 3,
@@ -31,6 +33,7 @@ const projectData = [
         githubLink: '',
         projectImg: '',
         color: '',
+        animation: 'left',
     },
     {
         id: 4,
@@ -42,6 +45,7 @@ const projectData = [
         githubLink: '',
         projectImg: '',
         color: '',
+        animation: 'right',
     },
     {
         id: 5,
@@ -53,6 +57,7 @@ const projectData = [
         githubLink: '',
         projectImg: '',
         color: '',
+        animation: 'left',
     },
     {
         id: 6,
@@ -64,6 +69,7 @@ const projectData = [
         githubLink: '',
         projectImg: '',
         color: '',
+        animation: 'right',
     },
 ]
 

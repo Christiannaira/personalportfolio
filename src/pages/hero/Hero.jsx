@@ -12,9 +12,15 @@ import Cta from '../../components/cta/Cta';
 
 import ReviewOne from '../../assets/c1.jpg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Hero = () => {
 
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     return (
 

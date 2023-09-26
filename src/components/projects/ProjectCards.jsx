@@ -1,19 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import SampleProject from '../../assets/mockup-sample.webp';
 
 import projectData from './ProjectData';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 const ProjectCards = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <>
-            {projectData.map(({ id, projectTitle, description, date, tools, projectLink, githubLink, projectImg }, index) => (
+            {projectData.map(({ id, projectTitle, description, date, tools, projectLink, githubLink, projectImg, color, animation }, index) => (
 
                 <div className="col-lg-6 project-main-card" key={index}>
 
-                    <div className="project-main-card-content">
+                    <div className="project-main-card-content" data-aos={animation === 'left' ? "fade-right" : "fade-left"}>
 
                         <div className="project-main-card-content-img">
                             <img src={SampleProject} alt="" />

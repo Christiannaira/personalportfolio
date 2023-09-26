@@ -1,7 +1,9 @@
 
+import { useEffect } from 'react';
 import Hero from './pages/hero/Hero';
 import { Route, Routes } from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor';
+
 
 function App() {
 

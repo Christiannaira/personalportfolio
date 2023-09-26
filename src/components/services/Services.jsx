@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './services.css';
 
 import ServicesCards from './ServicesCards';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Services = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <>
 
-            <section className="services" id="services">
+            <section className="services" id="services" data-aos="fade-up">
 
                 <div className="services-main-content container-fluid-md">
 

@@ -43,7 +43,7 @@ const Projects = () => {
                 ]}
             />
 
-            <section className="projects" id="projects">
+            <section className="projects" id="projects" >
 
                 <div className="projects-main-content container-fluid-md">
 
