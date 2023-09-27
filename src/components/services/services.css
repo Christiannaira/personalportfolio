@@ -17,6 +17,7 @@
     padding: 2rem;
     border-radius: 8px;
     transition: .1s ease-out;
+    height: 380px;
 }
 
 .services-card-content.best {
@@ -51,4 +52,34 @@
 
 .services-card-title p {
     color: #555;
+}
+
+@media screen and (max-width: 1180px) {
+    .services-card-title h3 {
+        font-size: 1.3rem;
+    }
+
+    .services-card-title p {
+        color: #555;
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .services-card-content {
+        width: 500px;
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .services-card-content {
+        width: 100%;
+        margin: none;
+    }
 }

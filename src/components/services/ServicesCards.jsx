@@ -27,7 +27,7 @@ const ServicesCards = () => {
 
                             <div className="services-card-title">
                                 <h3>{title}</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sunt sit nesciunt quibusdam blanditiis aspernatur ratione temporibus obcaecati quas dolorem corporis non nostrum culpa qui inventore, laborum sapiente, reprehenderit minima?</p>
+                                <p>{description}</p>
                             </div>
 
                         </div>
