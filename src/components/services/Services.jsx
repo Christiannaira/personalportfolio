@@ -10,7 +10,9 @@ import 'aos/dist/aos.css';
 const Services = () => {
 
     useEffect(() => {
-        AOS.init();
+        window.onload = () => {
+            AOS.init();
+        }
     }, [])
 
     return (

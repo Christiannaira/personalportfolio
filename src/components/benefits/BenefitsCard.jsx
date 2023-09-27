@@ -42,7 +42,7 @@ const BenefitsCard = () => {
                         benefitsData.map(({ id, title, des }, index) => {
 
                             return (
-                                <SwiperSlide>
+                                <SwiperSlide key={index}>
 
                                     <div className="swiper-main-content d-flex align-items-center justify-content-between">
 

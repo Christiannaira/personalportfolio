@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect } from 'react';
 import "./benefits.css";
 
 
@@ -9,23 +9,23 @@ import DesignerImg from '../../assets/designer.png';
 import BenefitsCard from './BenefitsCard';
 import Problems from './Problems';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-// import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+
 
 const benefits = () => {
 
-    // const progressCircle = useRef(null);
-    // const progressContent = useRef(null);
-    // const onAutoplayTimeLeft = (s, time, progress) => {
-    //     progressCircle.current.style.setProperty('--progress', 1 - progress);
-    //     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-    // };
+    useEffect(() => {
+
+        window.onload = () => {
+            AOS.init();
+        }
+
+    }, [])
+
     return (
         <>
 
@@ -62,7 +62,7 @@ const benefits = () => {
                 ]}
             />
 
-            <section className="benefits" id="benefits">
+            <section className="benefits" id="benefits" data-aos="fade-up">
 
                 <div className="benefits-main-content">
 
@@ -80,13 +80,13 @@ const benefits = () => {
                                 <div className="problem">
 
                                     <ul>
-                                        <li><i class='bx bx-check-double'></i> Gather Quality Leads on your landing page.</li>
-                                        <li><i class='bx bx-check-double'></i> Develop a great user experience on your website.</li>
-                                        <li><i class='bx bx-check-double'></i> Position your brand with authority.</li>
-                                        <li><i class='bx bx-check-double'></i> Redesign your landing page aligned with your business goals and objectives.</li>
-                                        <li><i class='bx bx-check-double'></i> Stand out from the rest of your field.</li>
-                                        <li><i class='bx bx-check-double'></i> Plan out the best strategy to increase your sales & conversions.</li>
-                                        <li><i class='bx bx-check-double'></i> Build trust with your audience and prospects.</li>
+                                        <li><i className='bx bx-check-double'></i> Gather Quality Leads on your landing page.</li>
+                                        <li><i className='bx bx-check-double'></i> Develop a great user experience on your website.</li>
+                                        <li><i className='bx bx-check-double'></i> Position your brand with authority.</li>
+                                        <li><i className='bx bx-check-double'></i> Redesign your landing page aligned with your business goals and objectives.</li>
+                                        <li><i className='bx bx-check-double'></i> Stand out from the rest of your field.</li>
+                                        <li><i className='bx bx-check-double'></i> Plan out the best strategy to increase your sales & conversions.</li>
+                                        <li><i className='bx bx-check-double'></i> Build trust with your audience and prospects.</li>
 
                                     </ul>
 

@@ -1,8 +1,7 @@
 /* hero section design*/
 
 .hero {
-    padding-top: 6rem;
-    height: 85vh;
+    height: 100vh;
 }
 
 .main-hero-content {
@@ -71,6 +70,14 @@
 
 .hero-main-button {
     margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-main-button-content {
+    display: flex;
+    align-items: center;
 }
 
 .hero-main-button .hero-btn {

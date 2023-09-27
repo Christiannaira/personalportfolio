@@ -1,4 +1,47 @@
-.about {
+.about {}
+
+.about-content,
+.about-content-two {
+    display: flex;
+    width: 1200px;
+    margin: 0px auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about-content-img img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid yellow
+}
+
+.about-content-img {
+    position: relative;
+    width: 300px;
+}
+
+.about-content-img .avatar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    border: 2px solid yellow
+}
+
+.about-content-texts {
+    background-color: yellow;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.about-content-texts p {
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.about-content-two .about-content-texts {
     background-color: hsl(260, 60%, 98%);
-    border-top: 1px solid #222;
 }

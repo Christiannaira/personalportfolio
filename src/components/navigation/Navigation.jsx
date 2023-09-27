@@ -8,7 +8,7 @@ const Navigation = () => {
 
     const handleClick = () => {
 
-        alert("hello")
+        setOpenNav(!openNav);
 
     }
 
@@ -34,7 +34,7 @@ const Navigation = () => {
 
                 <div className="navigation-main-content">
 
-                    <div className="navigation-content">
+                    <div className={openNav ? "navigation-content openThisNav" : "navigation-content"}>
 
                         <div className="navigation-links">
                             <div className="logo">
@@ -54,7 +54,7 @@ const Navigation = () => {
 
                     </div>
 
-                    <div className="navigation-menu" onClick={() => (
+                    <div className={openNav ? "navigation-menu openThisMenu" : "navigation-menu"} onClick={() => (
                         handleClick()
                     )}>
                         <div className="menu menu1"></div>

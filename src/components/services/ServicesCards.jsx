@@ -17,7 +17,7 @@ const ServicesCards = () => {
 
                 return (
 
-                    <div className="col-lg-4 services-card-main-content ">
+                    <div className="col-lg-4 services-card-main-content" key={index}>
 
                         <div className={best ? 'services-card-content best' : 'services-card-content'}>
 

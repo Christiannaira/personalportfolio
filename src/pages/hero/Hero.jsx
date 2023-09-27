@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import TypeIt from 'typeit-react';
-
 import './hero.css';
 
 import Projects from '../../components/projects/Projects';
@@ -9,6 +8,8 @@ import Services from '../../components/services/Services';
 import About from '../../components/about/About';
 import Benefits from '../../components/benefits/Benefits';
 import Cta from '../../components/cta/Cta';
+import Testimonial from "../../components/testimonial/Testimonial";
+// import Contact from "../../components/contact/Contact";
 
 import ReviewOne from '../../assets/c1.jpg';
 
@@ -19,7 +20,9 @@ import 'aos/dist/aos.css';
 const Hero = () => {
 
     useEffect(() => {
-        AOS.init();
+        window.onload = () => {
+            AOS.init();
+        }
     }, [])
 
     return (
@@ -28,13 +31,14 @@ const Hero = () => {
 
 
             <Navigation />
-            <section className="hero" id="home">
+            <section className="hero" id="hero">
 
                 <div className="main-hero-content">
 
                     <div className="hero-content container-fluid-md  ">
 
                         <span className="hero-greet">Hi there!</span>
+
                         <h1 className='hero-fullname'>
                             <TypeIt options={{
                                 waitUntilVisible: true,
@@ -43,6 +47,7 @@ const Hero = () => {
                                 I'm Christian Naira
                             </TypeIt>
                         </h1>
+
                         <p className="hero-title">
                             <TypeIt
                                 className="hero-title-type"
@@ -61,22 +66,24 @@ const Hero = () => {
                             >
                             </TypeIt>
                         </p>
+
                         <p className="hero-value-des">
                             I help start-ups to bring their businesses online by <br />
                             building <span>clean and converting landing pages.</span>
                         </p>
 
-                        <div className="hero-main-button d-flex align-items-center justify-content-between">
+                        <div className="hero-main-button">
 
-                            <div className="hero-main-button-content d-flex align-items-center">
+                            <div className="hero-main-button-content">
+
                                 <button className="btn btn-dark hero-btn">Book A Free Consultation</button>
 
                                 <div className="hero-social-links d-flex align-items-center gap-2">
 
-                                    <a href="" data-aos="fade-up" data-aos-duration="400"><i class='bx bxl-linkedin-square'></i></a>
-                                    <a href="" data-aos="fade-up" data-aos-duration="500"><i class='bx bxl-github' ></i></a>
-                                    <a href="" data-aos="fade-up" data-aos-duration="600"><i class='bx bxl-facebook-square' ></i></a>
-                                    <a href="" data-aos="fade-up" data-aos-duration="700"><i class='bx bxl-dribbble' ></i></a>
+                                    <a href="" data-aos="fade-up" data-aos-duration="400"><i className='bx bxl-linkedin-square'></i></a>
+                                    <a href="" data-aos="fade-up" data-aos-duration="500"><i className='bx bxl-github' ></i></a>
+                                    <a href="" data-aos="fade-up" data-aos-duration="600"><i className='bx bxl-facebook-square' ></i></a>
+                                    <a href="" data-aos="fade-up" data-aos-duration="700"><i className='bx bxl-dribbble' ></i></a>
 
                                 </div>
                             </div>
@@ -115,11 +122,10 @@ const Hero = () => {
 
             </section>
 
-            <Projects />
-            <Services />
+            {/* <Projects /> */}
+            {/* <Services />
             <Benefits />
-            <Cta />
-            {/* <About /> */}
+            <About /> */}
         </>
     )
 }
