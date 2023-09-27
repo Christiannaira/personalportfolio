@@ -123,8 +123,8 @@ const Hero = () => {
             </section>
 
             <Projects />
-            {/* <Services />
-            <Benefits />
+            <Services />
+            {/* <Benefits />
             <About /> */}
         </>
     )

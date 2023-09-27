@@ -29,9 +29,9 @@ section {
     padding: 60px;
 }
 
+
 .section-main-text span {
     display: inline-block;
-
 }
 
 .section-main-text h2 {
@@ -69,4 +69,51 @@ section {
     }
 
 
+}
+
+@media screen and (max-width: 800px) {
+
+    .section-main-text h2 {
+        font-size: 7rem;
+    }
+
+    .section-main-text span {
+        font-size: 2.6rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .section-main-text h2 {
+        font-size: 6rem;
+    }
+
+    .section-main-text span {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .section-main-text h2 {
+        font-size: 4rem;
+    }
+
+    .section-main-text span {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+
+    .section-main-text h2 {
+        font-size: 3rem;
+    }
+
+    .section-main-text span {
+        font-size: 2.1rem;
+    }
 }

@@ -1,5 +1,6 @@
 .projects {
     padding-top: 30px;
+    overflow: hidden;
 }
 
 .project-main-card {
@@ -59,8 +60,9 @@
 }
 
 .project-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
+    letter-spacing: 7px;
 }
 
 .projectNumber {
@@ -72,9 +74,59 @@
     position: relative;
     display: inline-block;
     padding: 3px 10px;
-    background-color: #fff;
-    color: #222;
-    margin: 3px 5px;
+    background-color: #222;
+    color: #fff;
+    margin: 5px;
     box-shadow: -3px 3px 0px yellow;
     border: 1px solid #444;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.project-main-card-des .view-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-main-card-des .view-link a {
+    display: inline-block;
+    padding: 10px 1rem;
+    background-color: hsl(260, 60%, 98%);
+    color: #222;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 200px;
+    box-shadow: 0px 2px 8px #222;
+    transition: .2s ease-out;
+
+}
+
+.project-main-card-des .view-link a:first-child {
+    background-color: yellow;
+}
+
+.project-main-card-des .view-link a:hover {
+    background-color: #222 !important;
+    color: #fff;
+    transform: translateX(5px);
+}
+
+@media screen and (max-width: 1090px) {
+    .card-tool {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .projects {
+        padding-top: 0;
+    }
+
 }

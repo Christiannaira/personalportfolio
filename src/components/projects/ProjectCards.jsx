@@ -8,7 +8,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-
 const ProjectCards = () => {
 
     useEffect(() => {
@@ -19,7 +18,7 @@ const ProjectCards = () => {
         <>
             {projectData.map(({ id, projectTitle, description, date, tools, projectLink, githubLink, projectImg, color, animation }, index) => (
 
-                <div className="col-lg-6 project-main-card" key={index}>
+                <div className="col-md-6 project-main-card" key={index}>
 
                     <div className="project-main-card-content" data-aos={animation === 'left' ? "fade-right" : "fade-left"}>
 
@@ -41,7 +40,7 @@ const ProjectCards = () => {
 
                             </div>
 
-                            <div className="projects-main-card-tools d-flex">
+                            <div className="projects-main-card-tools d-flex flex-wrap">
 
                                 {tools.map((tool, index) => {
 
@@ -51,6 +50,11 @@ const ProjectCards = () => {
 
                                 })}
 
+                            </div>
+
+                            <div className="view-link">
+                                <a href={projectLink} target='_blank'>visit website</a>
+                                <a href={githubLink} target='_blank'>github link</a>
                             </div>
 
                         </div>

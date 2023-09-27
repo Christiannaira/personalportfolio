@@ -139,3 +139,14 @@
     }
 
 }
+
+
+@media screen and (max-width: 800px) {
+
+    .navigation-list>a {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+        font-weight: 600;
+    }
+
+}
