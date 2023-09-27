@@ -62,9 +62,9 @@ const benefits = () => {
                 ]}
             />
 
-            <section className="benefits" id="benefits" data-aos="fade-up">
+            <section className="benefits" id="benefits" >
 
-                <div className="benefits-main-content">
+                <div className="benefits-main-content" data-aos="fade-up">
 
                     <div className="benefits-content">
 
@@ -98,12 +98,7 @@ const benefits = () => {
 
                         </div>
 
-
-
-
                     </div>
-                    <h3 className='benefits-card-title'>MY DEVELOPMENT - <br /> AND DESIGN PROCESS</h3>
-                    <BenefitsCard />
 
                 </div>
 

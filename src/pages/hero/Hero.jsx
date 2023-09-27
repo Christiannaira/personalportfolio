@@ -10,6 +10,7 @@ import Benefits from '../../components/benefits/Benefits';
 import Cta from '../../components/cta/Cta';
 import Testimonial from "../../components/testimonial/Testimonial";
 // import Contact from "../../components/contact/Contact";
+import Process from '../../components/process/Process';
 
 import ReviewOne from '../../assets/c1.jpg';
 
@@ -124,8 +125,9 @@ const Hero = () => {
 
             <Projects />
             <Services />
-            {/* <Benefits />
-            <About /> */}
+            <Benefits />
+            {/* <Process /> */}
+            {/* <About /> */}
         </>
     )
 }

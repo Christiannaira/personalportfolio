@@ -1,0 +1,109 @@
+#swiper {
+    height: 60vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: start;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+    opacity: 0;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.benefits-card-title {
+    color: transparent;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: .9;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: red;
+    text-align: center;
+    margin: 7rem 0;
+}
+
+.swiper-main-content {
+    height: 100%;
+    background-color: inherit;
+    border: 2px dashed #121212;
+    padding: 2rem 3rem;
+}
+
+.swiper-main-content h3 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #121212;
+}
+
+.swiper-content {}
+
+.swiper-pagination-bullet {
+    display: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
+
+.swiper-content-des {
+    width: 800px;
+}
+
+.swiper-content-des p {
+    color: #222;
+    font-size: 1.7rem;
+}
+
+.swiper-main-content .number {
+    color: red;
+    font-size: 20rem;
+    font-family: 'JetBrains Mono';
+    font-weight: 200;
+    opacity: .5;
+}

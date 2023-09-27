@@ -107,7 +107,9 @@ section {
 
 @media screen and (max-width: 400px) {
 
-
+    section {
+        padding: 60px 10px;
+    }
 
     .section-main-text h2 {
         font-size: 3rem;
