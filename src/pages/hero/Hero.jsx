@@ -122,7 +122,7 @@ const Hero = () => {
 
             </section>
 
-            {/* <Projects /> */}
+            <Projects />
             {/* <Services />
             <Benefits />
             <About /> */}

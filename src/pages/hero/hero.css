@@ -160,3 +160,140 @@
     padding: 5px 10px;
     font-size: 13px;
 }
+
+@media screen and (max-width: 1400px) {
+    .hero-review {
+        width: 300px;
+        margin-right: 1rem;
+    }
+
+    .hero-review-content h4 {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .hero-review-content span {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+    .hero {
+        height: 85vh;
+        padding-top: 70px;
+    }
+
+    .hero-review {
+        margin-right: 0;
+        width: 300px;
+    }
+
+    .hero-review-content h4 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .hero-review-content span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+
+    .hero-review-content {
+        flex-direction: column;
+    }
+
+    .hero-title-type {
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .hero-title-type {
+        font-size: 1.3rem;
+        letter-spacing: 5px;
+    }
+
+    .hero-review {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-fullname {
+        font-size: 2.6rem;
+    }
+
+    .hero-title-type {
+        font-size: 1.2rem;
+    }
+
+    .hero-social-links i {
+        font-size: 1.5rem;
+    }
+
+    .hero-main-button .hero-btn {
+        padding: 12px 1.6rem;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+
+    .hero-content::before {
+        left: -1rem;
+        bottom: -1rem;
+    }
+
+    .hero-main-button-content {
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: start;
+    }
+
+    .hero-social-links {
+        margin-left: 0;
+    }
+
+    .hero-social-links i {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .hero {
+        padding: 0;
+    }
+
+    .hero-content,
+    .hero-content::before {
+        border: none;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .hero-main-button {
+        margin-top: 14px;
+    }
+
+    .hero-main-button-content {
+        margin-top: 0;
+    }
+
+}

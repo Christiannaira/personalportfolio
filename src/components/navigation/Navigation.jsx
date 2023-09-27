@@ -43,11 +43,11 @@ const Navigation = () => {
 
                             <div className="navigation-list">
 
-                                <a href="#home">home</a>
-                                <a href="#about">about</a>
-                                <a href="#projects">projects</a>
-                                <a href="#services">services</a>
-                                <a href="#contact">contact</a>
+                                <a href="#hero" onClick={() => setOpenNav(false)}>home</a>
+                                <a href="#about" onClick={() => setOpenNav(false)}>about</a>
+                                <a href="#projects" onClick={() => setOpenNav(false)}>projects</a>
+                                <a href="#services" onClick={() => setOpenNav(false)}>services</a>
+                                <a href="#contact" onClick={() => setOpenNav(false)}>contact</a>
 
                             </div>
                         </div>
