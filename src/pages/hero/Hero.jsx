@@ -126,7 +126,7 @@ const Hero = () => {
             <Projects />
             <Services />
             <Benefits />
-            {/* <Process /> */}
+            <Process />
             {/* <About /> */}
         </>
     )

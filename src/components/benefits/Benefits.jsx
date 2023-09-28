@@ -6,7 +6,6 @@ import AnimatedCursor from 'react-animated-cursor'
 
 import DesignerImg from '../../assets/designer.png';
 
-import BenefitsCard from './BenefitsCard';
 import Problems from './Problems';
 
 

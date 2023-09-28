@@ -1,6 +1,5 @@
-#swiper {
-    height: 60vh;
-}
+#process {}
+
 
 .swiper {
     width: 100%;
@@ -8,14 +7,11 @@
 }
 
 .swiper-slide {
-    text-align: start;
-    font-size: 18px;
     /* Center slide text vertically */
+    margin-top: 2rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1rem;
-
+    justify-content: center;
 }
 
 .swiper-slide img {
@@ -56,31 +52,36 @@
     transform: rotate(-90deg);
 }
 
-.benefits-card-title {
-    color: transparent;
-    font-weight: 800;
-    font-size: 6rem;
-    line-height: .9;
-    -webkit-text-stroke: 3px;
-    -webkit-text-stroke-color: red;
-    text-align: center;
-    margin: 7rem 0;
-}
 
 .swiper-main-content {
-    height: 100%;
+    position: relative;
+    height: auto;
+    max-width: 100%;
     background-color: inherit;
-    border: 2px dashed #121212;
-    padding: 2rem 3rem;
+    padding: 2rem;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 5px solid yellow;
+    border-radius: 8px;
+    height: 600px;
+}
+
+.swiper-content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .swiper-main-content h3 {
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 900;
     color: #121212;
 }
 
-.swiper-content {}
+/*bullet and arrow swiper design*/
 
 .swiper-pagination-bullet {
     display: none !important;
@@ -92,18 +93,73 @@
 }
 
 .swiper-content-des {
-    width: 800px;
+    max-width: 800px;
 }
 
 .swiper-content-des p {
-    color: #222;
-    font-size: 1.7rem;
+    color: #444;
+    font-size: 1.4rem;
 }
 
 .swiper-main-content .number {
-    color: red;
+    display: inline-flex;
+    align-items: center;
+}
+
+.swiper-main-content .number h5 {
+    color: #222;
     font-size: 20rem;
     font-family: 'JetBrains Mono';
     font-weight: 200;
     opacity: .5;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .swiper-main-content .number h5 {
+
+        font-size: 15rem;
+    }
+
+    .swiper-main-content h3 {
+        font-size: 3.5rem;
+    }
+
+    .swiper-content-des p {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .swiper-main-content .number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .swiper-main-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .swiper-content-des p {
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .swiper-main-content {
+        height: 500px;
+    }
+
+    .swiper-main-content .number h5 {
+        opacity: .3;
+    }
+
 }
