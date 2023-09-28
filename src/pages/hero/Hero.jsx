@@ -8,7 +8,7 @@ import Services from '../../components/services/Services';
 import About from '../../components/about/About';
 import Benefits from '../../components/benefits/Benefits';
 import Cta from '../../components/cta/Cta';
-import Testimonial from "../../components/testimonial/Testi monial";
+import Testimonial from "../../components/testimonial/Testimonial";
 import Process from '../../components/process/Process';
 import Contact from '../../components/contact/Contact';
 
