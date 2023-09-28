@@ -13,12 +13,12 @@
     width: 100%;
     object-fit: cover;
     border-radius: 100%;
-    border: 5px solid yellow
+    border: 5px solid yellow;
 }
 
 .about-content-img {
     position: relative;
-    width: 300px;
+    max-width: 300px;
 }
 
 .about-content-img .avatar {
@@ -64,6 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .about-content-social-links a {
@@ -177,4 +178,77 @@
 .certificate-content a:hover {
     text-decoration: underline;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 850px) {
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content-img {
+        margin: auto;
+    }
+
+    .about-content-contact {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .about-content {
+        padding: 2rem 0;
+    }
+
+    .about-content-texts {
+        padding: 2rem 1rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .technology-stacks-content {
+        justify-content: center;
+    }
+
+    .technology-stacks-content .stack {
+        width: 50px;
+        height: 50px;
+    }
+
+    .certificate {
+        width: 150px;
+    }
+
+    .certificate-content h4 {
+        font-size: 15px;
+    }
+
+    .certificate-content span {
+        font-size: 10px;
+    }
+
+    .certificate-content a {
+        font-size: 13px;
+    }
+
+}
+
+.about-content-contact h4 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.about-content-contact-details p {
+    font-size: 15px;
+    color: yellow;
+    margin: 5px 0;
+}
+
+.about-content-contact-details p span {
+    font-weight: 600;
+    color: #fff;
 }

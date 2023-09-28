@@ -67,6 +67,22 @@ const About = () => {
                                 <i className='bx bxs-star'></i>
                             </div>
 
+
+                            <div className="about-content-contact">
+
+                                <h4>Reach me out: </h4>
+
+                                <div className="about-content-contact-details">
+
+                                    <p><span>Phone:</span><br /> 0950-588-9037</p>
+                                    <p><span>Email:</span><br /> Chanzkiechannelz@gmail.com</p>
+
+
+                                </div>
+
+                            </div>
+
+
                             <div className='about-content-social-links'>
 
                                 <a href="" ><i className='bx bxl-linkedin-square'></i></a>
@@ -76,6 +92,8 @@ const About = () => {
 
 
                             </div>
+
+
                         </div>
 
                         <div className='about-content-main-texts'>
