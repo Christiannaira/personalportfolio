@@ -8,11 +8,9 @@ import Services from '../../components/services/Services';
 import About from '../../components/about/About';
 import Benefits from '../../components/benefits/Benefits';
 import Cta from '../../components/cta/Cta';
-import Testimonial from "../../components/testimonial/Testimonial";
-// import Contact from "../../components/contact/Contact";
+import Testimonial from "../../components/testimonial/Testi monial";
 import Process from '../../components/process/Process';
-
-import ReviewOne from '../../assets/c1.jpg';
+import Contact from '../../components/contact/Contact';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -127,7 +125,8 @@ const Hero = () => {
             <Services />
             <Benefits />
             <Process />
-            {/* <About /> */}
+            <About />
+            <Testimonial />
         </>
     )
 }

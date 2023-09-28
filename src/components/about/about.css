@@ -1,9 +1,8 @@
 .about {}
 
-.about-content,
-.about-content-two {
+.about-content {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0px auto;
     gap: 2rem;
     padding: 2rem;
@@ -44,4 +43,138 @@
 
 .about-content-two .about-content-texts {
     background-color: hsl(260, 60%, 98%);
+}
+
+
+
+.about-content .ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.13rem 10px;
+}
+
+.about-content .ratings i {
+    color: yellow;
+    font-size: 1.3rem;
+
+}
+
+.about-content-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content-social-links a {
+    position: relative;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: .3s ease-out;
+}
+
+.about-content-social-links a:hover {
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.about-content-social-links i {
+    font-size: 2rem;
+    color: #fff;
+    padding: 12px;
+    transition: .3s ease-out;
+}
+
+
+.about-content-social-links a:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #222;
+}
+
+.technology-stacks h3 {
+    background-color: #fff;
+    color: #222;
+    display: inline-block;
+    padding: 10px 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 1.2rem 0;
+}
+
+.technology-stacks-content {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.technology-stacks-content .stack img {
+    display: block;
+    width: 100%;
+}
+
+.technology-stacks-content .stack {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 3px 20px #111;
+    transition: .2s ease-out;
+}
+
+.technology-stacks-content .stack:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+
+.certificate {
+    background-color: #fff;
+    width: 200px;
+    max-height: 170px;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: .2s ease-out;
+}
+
+.certificate:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+
+.certificate-content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.certificate-content h4 {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: .9;
+}
+
+.certificate-content span {
+    color: #555;
+    display: block;
+    font-size: 13px;
+}
+
+.certificate-content a {
+    display: block;
+    text-decoration: none;
+    transition: .1s ease-out;
+}
+
+.certificate-content a:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
 }
