@@ -127,6 +127,12 @@ const Hero = () => {
             <Process />
             <About />
             <Testimonial />
+            <Cta />
+            <Contact />
+
+            <footer>
+                footer
+            </footer>
         </>
     )
 }
