@@ -8,7 +8,7 @@ const Cta = () => {
 
     return (
         <>
-            <section className="cta" id="cta">
+            <section className="cta" id="contact">
 
                 <div className="cta-main-content">
 

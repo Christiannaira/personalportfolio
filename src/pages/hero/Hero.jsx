@@ -10,7 +10,6 @@ import Benefits from '../../components/benefits/Benefits';
 import Cta from '../../components/cta/Cta';
 import Testimonial from "../../components/testimonial/Testimonial";
 import Process from '../../components/process/Process';
-import Contact from '../../components/contact/Contact';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -128,7 +127,6 @@ const Hero = () => {
             <About />
             <Testimonial />
             <Cta />
-            <Contact />
 
             <footer>
                 footer

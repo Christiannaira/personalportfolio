@@ -59,12 +59,12 @@
     max-width: 100%;
     background-color: inherit;
     padding: 2rem;
-    background-color: #FFF;
+    background-color: yellow;
     display: flex;
     flex-wrap: wrap;
-    border-top: 5px solid yellow;
     border-radius: 8px;
     height: 600px;
+    border: 2px dashed #222;
 }
 
 .swiper-content {
