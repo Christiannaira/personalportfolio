@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import Hero from './pages/hero/Hero';
+import MainPage from './MainPage';
 import { Route, Routes } from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor';
 
@@ -43,7 +44,7 @@ function App() {
         ]}
       />
       <Routes>
-        <Route path='/' element={<Hero />} />
+        <Route path='/' element={<MainPage />} />
       </Routes>
     </>
   )

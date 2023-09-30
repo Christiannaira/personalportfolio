@@ -54,6 +54,17 @@ section {
     letter-spacing: 7px;
 }
 
+footer {
+    padding: 30px;
+    background-color: #222;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
 @media screen and (max-width: 1060px) {
 
     section {

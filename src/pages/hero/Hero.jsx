@@ -2,15 +2,6 @@ import React, { useEffect } from 'react';
 import TypeIt from 'typeit-react';
 import './hero.css';
 
-import Projects from '../../components/projects/Projects';
-import Navigation from '../../components/navigation/Navigation';
-import Services from '../../components/services/Services';
-import About from '../../components/about/About';
-import Benefits from '../../components/benefits/Benefits';
-import Cta from '../../components/cta/Cta';
-import Testimonial from "../../components/testimonial/Testimonial";
-import Process from '../../components/process/Process';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,19 +12,26 @@ const Hero = () => {
         window.onload = () => {
             AOS.init();
         }
-    }, [])
+    }, []);
+
+    const handleScrollDown = () => {
+        // You can customize this scroll behavior
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: 'smooth',
+        });
+    };
 
     return (
 
         <>
 
 
-            <Navigation />
             <section className="hero" id="hero">
 
                 <div className="main-hero-content">
 
-                    <div className="hero-content container-fluid-md  ">
+                    <div className="hero-content container-fluid-md ">
 
                         <span className="hero-greet">Hi there!</span>
 
@@ -74,7 +72,7 @@ const Hero = () => {
 
                             <div className="hero-main-button-content">
 
-                                <button className="btn btn-dark hero-btn">Book A Free Consultation</button>
+                                <a href="https://calendly.com/christiannaira/free-consultation" target='_blank' className="btn btn-dark hero-btn">Book A Free Consultation</a>
 
                                 <div className="hero-social-links d-flex align-items-center gap-2">
 
@@ -114,23 +112,13 @@ const Hero = () => {
 
                 </div>
 
-                <div className="div">
+                <div className="scroll-down-button" onClick={handleScrollDown}>
+                    <span className="arrow">
 
+                    </span>
                 </div>
-
             </section>
 
-            <Projects />
-            <Services />
-            <Benefits />
-            <Process />
-            <About />
-            <Testimonial />
-            <Cta />
-
-            <footer>
-                footer
-            </footer>
         </>
     )
 }
