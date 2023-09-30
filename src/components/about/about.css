@@ -125,13 +125,11 @@
     background-color: #fff;
     padding: 10px;
     border-radius: 12px;
-    box-shadow: 0 3px 20px #111;
     transition: .2s ease-out;
 }
 
 .technology-stacks-content .stack:hover {
     transform: translateY(-5px);
-    box-shadow: none;
 }
 
 .certificate {
