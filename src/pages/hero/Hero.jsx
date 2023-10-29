@@ -64,7 +64,7 @@ const Hero = () => {
                         </p>
 
                         <p className="hero-value-des">
-                            I help start-ups to bring their businesses online by <br />
+                            I help start-ups to bring their businesses online by
                             building <span>clean and converting landing pages.</span>
                         </p>
 
