@@ -85,10 +85,13 @@ const About = () => {
 
                             <div className='about-content-social-links'>
 
-                                <a href="" ><i className='bx bxl-linkedin-square'></i></a>
-                                <a href="" ><i className='bx bxl-github' ></i></a>
-                                <a href="" ><i className='bx bxl-facebook-square' ></i></a>
-                                <a href=""><i className='bx bxl-dribbble' ></i></a>
+                                <a href="https://www.linkedin.com/in/christian-naira-379b1b283/" target='_blank' ><i className='bx bxl-linkedin-square'></i></a>
+
+                                <a href="https://github.com/Christiannaira" target='_blank' ><i className='bx bxl-github' ></i></a>
+
+                                <a href="https://www.facebook.com/itschanakunz" target='_blank' ><i className='bx bxl-facebook-square' ></i></a>
+
+                                <a href="https://dribbble.com/ItsChanz" target='_blank'><i className='bx bxl-dribbble' ></i></a>
 
 
                             </div>
