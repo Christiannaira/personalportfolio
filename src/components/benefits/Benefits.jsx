@@ -23,7 +23,31 @@ const benefits = () => {
             AOS.init();
         }
 
-    }, [])
+    }, []);
+
+    const benefitsData = [
+        {
+            data: "Increase the Conversion Rate of your Landing Page"
+        },
+        {
+            data: "Gather Quality Leads on your Business."
+        },
+        {
+            data: "Position your brand with authority and credibility."
+        },
+        {
+            data: "Enhance great user-experience to your site."
+        },
+        {
+            data: "Stand out from the rest."
+        },
+        {
+            data: "Lower your ad cost."
+        },
+        {
+            data: "Build trust with your audience and prospects."
+        },
+    ]
 
     return (
         <>
@@ -79,14 +103,13 @@ const benefits = () => {
                                 <div className="problem">
 
                                     <ul>
-                                        <li><i className='bx bx-check-double'></i> Gather Quality Leads on your landing page.</li>
-                                        <li><i className='bx bx-check-double'></i> Develop a great user experience on your website.</li>
-                                        <li><i className='bx bx-check-double'></i> Position your brand with authority.</li>
-                                        <li><i className='bx bx-check-double'></i> Redesign your landing page aligned with your business goals and objectives.</li>
-                                        <li><i className='bx bx-check-double'></i> Stand out from the rest of your field.</li>
-                                        <li><i className='bx bx-check-double'></i> Plan out the best strategy to increase your sales & conversions.</li>
-                                        <li><i className='bx bx-check-double'></i> Build trust with your audience and prospects.</li>
+                                        {benefitsData.map((item, index) => {
 
+                                            return (
+                                                <li key={index}><i className='bx bx-check-double'></i>{item.data}</li>
+                                            )
+
+                                        })}
                                     </ul>
 
                                 </div>

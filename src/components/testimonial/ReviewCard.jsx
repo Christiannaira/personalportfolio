@@ -10,19 +10,19 @@ const clients = [
         clientName: 'Bryan Barnedo',
         clientImg: ClientOne,
         clientTitle: 'Video Editor',
-        clientReview: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam doloribus nobis ab error possimus enim, nostrum quaerat fuga tempore maxime totam ipsa porro eaque minima temporibus sed, sint reprehenderit.',
+        clientReview: "Working and collaborating with christian was one of the best thing I ever did. Not just because of his production quality but he's just too good for his craft and easy to communicate with. Not to mention that he's one I ask when it comes to technicalities in the web. Overall, working with chris was worth it 🔥"
     },
     {
         clientName: 'John Carl Torcuador',
         clientImg: ClientTwo,
         clientTitle: 'Social Media Manager',
-        clientReview: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam doloribus nobis ab error possimus enim, nostrum quaerat fuga tempore maxime totam ipsa porro eaque minima temporibus sed, sint reprehenderit.',
+        clientReview: "I personally recommend Christian as a web developer and website designer. He has curated the design that I want for my website, and he's attention detailed when it comes to workflow. His design was very mordenized and smooth. Working with Christian is a goal within our company. ",
     },
     {
         clientName: 'Glen Merinillo',
         clientImg: ClientThree,
         clientTitle: 'Social Media Manager',
-        clientReview: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam doloribus nobis ab error possimus enim, nostrum quaerat fuga tempore maxime totam ipsa porro eaque minima temporibus sed, sint reprehenderit.',
+        clientReview: 'Christian did a great job on my website. Highly recommended! Thanks, Christian!',
     },
 ]
 

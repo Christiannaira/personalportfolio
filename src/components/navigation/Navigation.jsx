@@ -38,7 +38,7 @@ const Navigation = () => {
 
                         <div className="navigation-links">
                             <div className="logo">
-                                logo
+                                chris.
                             </div>
 
                             <div className="navigation-list">

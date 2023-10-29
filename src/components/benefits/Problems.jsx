@@ -20,8 +20,9 @@ const Problems = () => {
                     <h3 className='problems-highlight'>REINVENT THE WHEEL!!</h3>
 
                     <div className="problems-value">
-                        <p>Many start-ups and small business owners failed to adapt to a modern way of marketing to increase their business online, that's why they can't stand out. Presenting your business online is essential in the game, that's why you need not just a landing page, but a high performing landing page that can make a high conversions rate.</p>
-                        <p>If you're a content creator, small business owner, entrepreneur, and a coach, <span className='problems-cta'>you're in the right place!</span>. As long as your game is in the phase of internet, this is crucial. Let's make your game grow!</p>
+                        <p>If you're an entreprenuer, course creator, online coach, or whatever you do in the internet game. As long as you're doing business in the digital era. You have to hire a companion that will work for you, 24 hours a day, and 365 days in a year. It's a website and a landing page. A High-Converting Site will generate more leads and more sales to your business, and your brand will enhance!</p>
+                        <p>Are you ready to take this journey with me?<span className='problems-cta'> Let's Get Started!</span></p>
+
                     </div>
 
 

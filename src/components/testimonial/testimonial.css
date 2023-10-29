@@ -1,6 +1,7 @@
 .testimonial {
     background-color: yellow;
     padding: 0;
+    height: 70vh;
 }
 
 .testimonial-content-review {
@@ -14,6 +15,7 @@
 }
 
 .review-content-card-content {
+    position: relative;
     border-radius: 12px;
     background-color: #fff;
     height: 100%;

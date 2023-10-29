@@ -99,12 +99,12 @@ const About = () => {
                         <div className='about-content-main-texts'>
 
                             <div className="about-content-texts">
-                                <p>Yo! I am Christian Naira, a web developer and designer from the philippines :-D. I have experience developing web applications, and web designs. But I'm more focused on designing landing pages right now that converts, for start-ups, and coaches.</p>
+                                <p>Yo! I am Christian Naira, a web developer and designer from the philippines :-D. I have experience developing web applications, and web designs. I have a keen eye developing high-converting landing pages and sales funnel for online businesses, entrepreneurs and online coaches.</p>
                                 <p>
                                     I've been coding and designing for 2 years now, I found myself passionate on what I've been doing because it enhances my problem solving skills and creativity. That's why I wanted to apply all of the knowledge I've acquired to help innovators struggling in the game.
                                 </p>
                                 <p>
-                                    Soonest, I will dive into web3 where I can build decentralized applications for web3 businesses. It's a future of the internet, it's our secret shh, hehe.
+                                    Soon, I will dive into web3 where I can build decentralized applications for web3 businesses. So, bear with me :-D.
                                 </p>
 
                             </div>

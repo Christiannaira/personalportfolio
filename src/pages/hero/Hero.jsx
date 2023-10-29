@@ -76,10 +76,13 @@ const Hero = () => {
 
                                 <div className="hero-social-links d-flex align-items-center gap-2">
 
-                                    <a href="" data-aos="fade-up" data-aos-duration="400"><i className='bx bxl-linkedin-square'></i></a>
-                                    <a href="" data-aos="fade-up" data-aos-duration="500"><i className='bx bxl-github' ></i></a>
-                                    <a href="" data-aos="fade-up" data-aos-duration="600"><i className='bx bxl-facebook-square' ></i></a>
-                                    <a href="" data-aos="fade-up" data-aos-duration="700"><i className='bx bxl-dribbble' ></i></a>
+                                    <a href="https://www.linkedin.com/in/christian-naira-379b1b283/" target='_blank' data-aos="fade-up" data-aos-duration="400"><i className='bx bxl-linkedin-square'></i></a>
+
+                                    <a href="https://github.com/Christiannaira" target='_blank' data-aos="fade-up" data-aos-duration="500"><i className='bx bxl-github' ></i></a>
+
+                                    <a href="https://www.facebook.com/itschanakunz" target='_blank' data-aos="fade-up" data-aos-duration="600"><i className='bx bxl-facebook-square' ></i></a>
+
+                                    <a href="https://dribbble.com/ItsChanz" target='_blank' data-aos="fade-up" data-aos-duration="700"><i className='bx bxl-dribbble' ></i></a>
 
                                 </div>
                             </div>
